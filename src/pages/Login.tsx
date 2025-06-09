@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
-import { Store, LogIn } from "lucide-react";
+import { LogIn } from "lucide-react";
 import { toast } from "sonner";
 import { useAuth } from "@/contexts/AuthContext";
 
@@ -53,15 +53,10 @@ const Login = () => {
       <Card className="w-full max-w-md shadow-2xl border-0">
         <CardHeader className="text-center pb-8">
           <div className="flex justify-center mb-4">
-            <div className="w-16 h-16 bg-gradient-to-r from-admin-500 to-admin-600 rounded-2xl flex items-center justify-center">
-              <Store className="w-8 h-8 text-white" />
-            </div>
+            <img src="/logo.png" alt="Bevon Delivery Logo" className="w-34 h-auto" />
           </div>
-          <CardTitle className="text-2xl font-bold text-gray-900">
-            DeliveryApp Gestor
-          </CardTitle>
           <p className="text-gray-600 mt-2">
-            Faça login para acessar o painel administrativo
+            Faça login para acessar o painel
           </p>
         </CardHeader>
         <CardContent>
