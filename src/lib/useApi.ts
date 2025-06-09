@@ -3,6 +3,7 @@ import Cookies from "js-cookie";
 import { User } from "@/types/restaurant";
 
 export const ApiUrl = import.meta.env.VITE_API_BASE_URL;
+console.log("API URL:", ApiUrl);
 const pasta = "super-admin";
 
 const apiInstance = axios.create({

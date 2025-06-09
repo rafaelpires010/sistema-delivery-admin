@@ -76,6 +76,7 @@ const Login = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 className="h-12"
                 required
+                autoComplete="email"
               />
             </div>
             <div className="space-y-2">
@@ -88,6 +89,7 @@ const Login = () => {
                 onChange={(e) => setSenha(e.target.value)}
                 className="h-12"
                 required
+                autoComplete="current-password"
               />
             </div>
             <Button
