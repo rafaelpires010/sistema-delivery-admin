@@ -16,8 +16,6 @@ const NewRestaurant = () => {
     formData.append('nome', form.nome);
     formData.append('slug', form.slug);
     formData.append('main_color', form.main_color);
-    formData.append('second_color', form.second_color);
-
     // O backend espera o arquivo no campo 'file'
     if (form.img) {
       formData.append('img', form.img);
