@@ -140,30 +140,6 @@ export const RestaurantForm = ({ onSubmit, onSuccess }: RestaurantFormProps) => 
                 />
               </div>
             </div>
-
-            <div className="space-y-2">
-              <Label htmlFor="second_color" className="text-sm font-medium text-gray-700">
-                Cor Secundária *
-              </Label>
-              <div className="flex items-center space-x-2">
-                <Input
-                  id="second_color"
-                  type="color"
-                  value={secondColor}
-                  onChange={(e) => setSecondColor(e.target.value)}
-                  className="w-16 h-10 p-1 border-gray-300"
-                  disabled={loading}
-                />
-                <Input
-                  type="text"
-                  value={secondColor}
-                  onChange={(e) => setSecondColor(e.target.value)}
-                  placeholder="#fc8181"
-                  className="flex-1 border-gray-300 focus:border-admin-500 focus:ring-admin-500"
-                  disabled={loading}
-                />
-              </div>
-            </div>
           </div>
 
           <div className="space-y-2">
